@@ -30,10 +30,6 @@ public class Driver {
         }
     }
 
-    private static void setDefaultDriverTimeout() {
-        driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_TIME, TimeUnit.SECONDS);
-    }
-
     public static void get(String url) {
         driver.get(url);
     }
